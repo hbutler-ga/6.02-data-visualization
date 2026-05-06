@@ -1541,38 +1541,6 @@ plt.savefig("weight_vs_mpg.png", dpi=300, bbox_inches="tight")
 plt.show()
 ```
 
-## Final Student Task
-
-Create and export one polished visualization.
-
-Requirements:
-
-- Choose one chart type from the lesson.
-- Use the `mpg` dataset.
-- Include a title.
-- Include x- and y-axis labels.
-- Use an appropriate figure size.
-- Use `plt.tight_layout()`.
-- Export the chart as a `.png` file.
-- Use `dpi=300`.
-
-Example solution:
-
-```python
-plt.figure(figsize=(10, 6))
-
-sns.scatterplot(data=mpg, x="horsepower", y="mpg", hue="origin", alpha=0.7)
-
-plt.title("Horsepower vs. MPG by Origin")
-plt.xlabel("Horsepower")
-plt.ylabel("Miles Per Gallon")
-
-plt.tight_layout()
-plt.savefig("horsepower_vs_mpg_by_origin.png", dpi=300, bbox_inches="tight")
-
-plt.show()
-```
-
 ---
 
 # Module Review
@@ -1598,38 +1566,6 @@ plt.show()
 - Keep charts readable.
 - More variables do not automatically make a better chart.
 - A finished chart should be understandable and exportable.
-
----
-
-# Optional Lab Prompts
-
-## Prompt 1: Distribution
-
-Create a histogram showing the distribution of `horsepower`.
-
-## Prompt 2: Category Counts
-
-Create a count plot showing the number of cars by `origin`.
-
-## Prompt 3: Relationship
-
-Create a scatterplot showing the relationship between `weight` and `mpg`.
-
-## Prompt 4: Group Comparison
-
-Create a boxplot comparing `mpg` across `cylinders`.
-
-## Prompt 5: Trend
-
-Create a line plot showing average `mpg` by `model_year`.
-
-## Prompt 6: Multiple Variables
-
-Create a scatterplot of `horsepower` vs. `mpg`, colored by `origin`.
-
-## Prompt 7: Export
-
-Export one polished visualization as a `.png` file using `dpi=300`.
 
 ---
 
